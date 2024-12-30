@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Dimensions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Enter Logo Dimensions and Product Dimension</h1>
+        <form>
+            <label for="logoHeight">Logo Height (mm):</label>
+            <input type="number" id="logoHeight" name="logoHeight" placeholder="Enter logo height" oninput="calculateDimensions()"><br>
+
+            <!-- Hidden input field for logo width -->
+            <input type="number" id="logoWidth" name="logoWidth" readonly>
+
+            <label for="productDimension">Product Dimension (mm):</label>
+            <input type="number" id="productDimension" name="productDimension" placeholder="Enter product dimension" oninput="calculateDimensions()"><br>
+
+            <p id="logoDistance"></p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
